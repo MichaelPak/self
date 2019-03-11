@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}template-blogpage{% endblock %}
+
+{% block content %}
+    <div class="hero-body">
+        <div class="container ">
+            <div class="columns is-multiline is-mobile is-centered">
+                <div class="column is-8 is-centered">
+                    <div class="content">
+                        <div class="has-text-centered">
+                            <h1 class="title">
+                                {{ page.title }}
+                            </h1>
+                            <div class="tags has-addons level-item">
+                                <span class="tag is-rounded">{{ page.date|date:"d.m.Y" }}</span>
+                            </div>
+                            <div class="card-image">
+                                <figure class="image full-width1">
+                                    {% image page.image original %}
+                                </figure>
+                            </div>
+                            <hr>
+                        </div>
+
+                        {{ page.intro|richtext }}
+                        {{ page.body|richtext }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {#    <h1>{{ page.title }}</h1>#}
+    {#    <p class="meta">{{ page.date }}</p>#}
+    {##}
+    {#    {{ page.intro|richtext }}#}
+    {##}
+    {#        {{ page.body|richtext }}#}
+    {##}
+    {#    <p><a href="{{ page.get_parent.url }}">Return to blog</a></p>#}
+
+{% endblock %}

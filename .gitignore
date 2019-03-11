@@ -1,1 +1,16 @@
+# OS
+.DS_Store
+
+# IDE
 .idea/
+
+# Python
+__pycache__/
+
+# Node
+node_modules/
+
+# App
+db.sqlite3
+src/core/settings/local.py
+src/media

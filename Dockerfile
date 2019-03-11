@@ -1,6 +1,5 @@
 # Use an official Python runtime as a parent image
 FROM python:3.7
-LABEL maintainer="hello@wagtail.io"
 
 # Set environment varibles
 ENV PYTHONUNBUFFERED 1
@@ -13,7 +12,7 @@ RUN pip install -r /code/requirements.txt
 RUN pip install gunicorn
 
 # Copy the current directory contents into the container at /code/
-COPY . /code/
+COPY src /code/
 # Set the working directory to /code/
 WORKDIR /code/
 
@@ -24,4 +23,4 @@ RUN chown -R wagtail /code
 USER wagtail
 
 EXPOSE 8000
-CMD exec gunicorn src.wsgi:application --bind 0.0.0.0:8000 --workers 3
+CMD exec gunicorn core.wsgi:application --bind 0.0.0.0:8000 --workers 3

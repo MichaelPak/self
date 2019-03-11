@@ -1,0 +1,25 @@
+{
+  "name": "self",
+  "version": "1.0.0",
+  "description": "Michael Pak site",
+  "main": "src/core/static/core/css/self.scss",
+  "scripts": {
+    "build": "node-sass --omit-source-map-url src/core/static/core/css/self.scss src/core/static/core/css/self.css",
+    "watch": "npm run build -- --watch",
+    "start": "npm run watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelPak/self.git"
+  },
+  "author": "Michael Pak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelPak/self/issues"
+  },
+  "homepage": "https://github.com/MichaelPak/self#readme",
+  "devDependencies": {
+    "bulma": "^0.7.4",
+    "node-sass": "^4.11.0"
+  }
+}
