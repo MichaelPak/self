@@ -1,4 +1,4 @@
-![logo](https://raw.githubusercontent.com/MichaelPak/self/master/app/src/core/static/core/img/logo.png)
+![logo](https://raw.githubusercontent.com/MichaelPak/self/master/src/core/static/core/img/logo.png)
 
 self
 ===
