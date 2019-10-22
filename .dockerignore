@@ -14,5 +14,3 @@ node_modules/
 db.sqlite3
 src/core/settings/local.py
 src/media
-requirements.txt
-.env

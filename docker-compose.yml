@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  self:
+    image: michaelpak/self
+    ports:
+    - "8000:8000"
+    links:
+    - postgres
+
+
+  postgres:
+    image: postgres:12-alpine
