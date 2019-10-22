@@ -1,11 +1,7 @@
 {
     "_meta": {
         "hash": {
-<<<<<<< Updated upstream
-            "sha256": "1b85741e4e7fcd8f846e1ab2fe3375315ed47041e5dc023a01a456574bbee48d"
-=======
-            "sha256": "d978f9704d055f3d4f907abb88d26fd7885d58466b049af541c65097f5e86a06"
->>>>>>> Stashed changes
+            "sha256": "aa195214930a4a882ba1d9fe0449a30005204c70a9029e52f23a583826365633"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -30,17 +26,10 @@
         },
         "certifi": {
             "hashes": [
-<<<<<<< Updated upstream
-                "sha256:046832c04d4e752f37383b628bc601a7ea7211496b4638f6514d0e5b9acc4939",
-                "sha256:945e3ba63a0b9f577b1395204e13c3a231f9bc0223888be653286534e5873695"
-            ],
-            "version": "==2019.6.16"
-=======
                 "sha256:e4f3620cfea4f83eedc95b24abd9cd56f3c4b146dd0177e83a21b4eb49e21e50",
                 "sha256:fd7c7c74727ddcf00e9acd26bba8da604ffec95bf1c2144e67aff7a8b50e6cef"
             ],
             "version": "==2019.9.11"
->>>>>>> Stashed changes
         },
         "chardet": {
             "hashes": [
@@ -79,18 +68,6 @@
         },
         "djangorestframework": {
             "hashes": [
-<<<<<<< Updated upstream
-                "sha256:42979bd5441bb4d8fd69d0f385024a114c3cae7df0f110600b718751250f6929",
-                "sha256:aedb48010ebfab9651aaab1df5fd3b4848eb4182afc909852a2110c24f89a359"
-            ],
-            "version": "==3.10.2"
-        },
-        "draftjs-exporter": {
-            "hashes": [
-                "sha256:503f222c81de9a0619158d8f88b638f9069af8de233dc020faa782c7a3b22100"
-            ],
-            "version": "==2.1.6"
-=======
                 "sha256:5488aed8f8df5ec1d70f04b2114abc52ae6729748a176c453313834a9ee179c8",
                 "sha256:dc81cbf9775c6898a580f6f1f387c4777d12bd87abf0f5406018d32ccae71090"
             ],
@@ -101,7 +78,6 @@
                 "sha256:5839cbc29d7bce2fb99837a404ca40c3a07313f2a20e2700de7ad6aa9a9a18fb"
             ],
             "version": "==2.1.7"
->>>>>>> Stashed changes
         },
         "gunicorn": {
             "hashes": [
@@ -198,17 +174,10 @@
         },
         "pytz": {
             "hashes": [
-<<<<<<< Updated upstream
-                "sha256:26c0b32e437e54a18161324a2fca3c4b9846b74a8dccddd843113109e1116b32",
-                "sha256:c894d57500a4cd2d5c71114aaab77dbab5eabd9022308ce5ac9bb93a60a6f0c7"
-            ],
-            "version": "==2019.2"
-=======
                 "sha256:1c557d7d0e871de1f5ccd5833f60fb2550652da6be2693c1e02300743d21500d",
                 "sha256:b02c06db6cf09c12dd25137e563b31700d3b80fcc4ad23abb7a315f2789819be"
             ],
             "version": "==2019.3"
->>>>>>> Stashed changes
         },
         "requests": {
             "hashes": [
@@ -233,17 +202,10 @@
         },
         "urllib3": {
             "hashes": [
-<<<<<<< Updated upstream
-                "sha256:b246607a25ac80bedac05c6f282e3cdaf3afb65420fd024ac94435cabe6e18d1",
-                "sha256:dbe59173209418ae49d485b87d1681aefa36252ee85884c31346debd19463232"
-            ],
-            "version": "==1.25.3"
-=======
                 "sha256:3de946ffbed6e6746608990594d08faac602528ac7015ac28d33cee6a45b7398",
                 "sha256:9a107b99a5393caf59c7aa3c1249c16e6879447533d0887f4336dde834c7be86"
             ],
             "version": "==1.25.6"
->>>>>>> Stashed changes
         },
         "wagtail": {
             "hashes": [
