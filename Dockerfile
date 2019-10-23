@@ -7,6 +7,7 @@ ENV DJANGO_ENV production
 COPY ./requirements.txt /code/requirements.txt
 RUN pip install --upgrade pip && \
     pip install -r /code/requirements.txt
+COPY ./docker-entrypoint.sh /code/docker-entrypoint.sh
 
 COPY src /code/
 WORKDIR /code/
@@ -16,4 +17,4 @@ RUN chown -R wagtail /code
 USER wagtail
 
 EXPOSE 8000
-CMD exec gunicorn core.wsgi:application --bind 0.0.0.0:8000 --workers 3
+ENTRYPOINT ["docker-entrypoint.sh"]

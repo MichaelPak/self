@@ -3,11 +3,52 @@ version: '3'
 services:
   self:
     image: michaelpak/self
-    ports:
-    - "8000:8000"
-    links:
-    - postgres
-
+    container_name: self
+    depends_on:
+      - postgres
+    env_file:
+      - .env
 
   postgres:
     image: postgres:12-alpine
+    container_name: postgres
+    volumes:
+      - postgresdata:/var/lib/postgresql/data
+    env_file:
+      - .env
+    environment:
+      - PGDATA=/var/lib/postgresql/data
+
+  caddy:
+    image: abiosoft/caddy:1.0.3
+    container_name: caddy
+    volumes:
+      - /opt/Caddyfile:/etc/Caddyfile
+      - caddydata:/root/.caddy
+    environment:
+      - ACME_AGREE=true
+    ports:
+      - "443:443"
+    depends_on:
+      - self
+
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 30
+
+volumes:
+  postgresdata:
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: '/opt/postgresdata'
+  caddydata:
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: '/opt/caddydata'
