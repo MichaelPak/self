@@ -22,7 +22,7 @@ jobs:
       run: docker build . --file Dockerfile --tag michaelpak/self
 
     - name: Push
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: michaelpak/self
         username: ${{ secrets.DOCKER_USERNAME }}
